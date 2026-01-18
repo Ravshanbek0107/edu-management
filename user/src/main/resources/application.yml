@@ -1,9 +1,11 @@
 spring:
   application:
     name: user
-
+  cloud:
+    config:
+      uri: http://localhost:8888
   config:
-    import: configserver:http://localhost:8888
+    import: 'configserver:'
 
   profiles:
     active: local

@@ -5,7 +5,7 @@ services:
     user: http://localhost:8182
     course: http://localhost:8183
   ports:
-    payment: 8081
+    payment: 8184
     gateway: 7777
     user: 8182
     course: 8183

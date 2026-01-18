@@ -48,5 +48,4 @@ interface UserCourseRepository : BaseRepository<UserCourse> {
 
     fun existsByUserIdAndCourseId(userId: Long, courseId: Long): Boolean
 
-    fun countByCourseId(courseId: Long): Long
 }

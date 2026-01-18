@@ -87,6 +87,8 @@ class CourseServiceImpl(
         val courseIds = userCourseRepository.findAllByUserId(userId)
             .map { it.courseId }
 
+        if (courseIds.isEmpty()) throw CourseNotFoundException()
+
         return courseRepository.findAllById(courseIds)
             .map { CourseResponse.toResponse(it) }
     }
