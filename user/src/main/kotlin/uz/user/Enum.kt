@@ -1,0 +1,12 @@
+package uz.user
+
+enum class ErrorCode(val code: Int) {
+    USER_NOT_FOUND(100),
+    USER_ALREADY_EXISTS(101),
+    USERNAME_ALREADY_TAKEN(102),
+
+    AMOUNT_MUST_BE_POSITIVE(200),
+    INSUFFITIENT_BALANCE(201),
+
+
+}
