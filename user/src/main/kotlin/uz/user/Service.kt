@@ -86,7 +86,7 @@ class UserServiceImpl(
             UserResponse.toResponse(it)
         }
     }
-
+    @Transactional
     override fun increaseBalance(userId: Long, request: BalanceRequest): BalanceResponse {
 
         if (request.amount < BigDecimal.ZERO) throw AmountMustBePositiveException()
@@ -95,12 +95,15 @@ class UserServiceImpl(
 
         user.balance += request.amount
 
+        userRepository.save(user)
+
         return BalanceResponse(
             userId = user.id!!,
             balance = user.balance
         )
     }
 
+    @Transactional
     override fun decreaseBalance(userId: Long, request: BalanceRequest): BalanceResponse {
 
         if (request.amount < BigDecimal.ZERO) throw AmountMustBePositiveException()
@@ -112,6 +115,8 @@ class UserServiceImpl(
         }
 
         user.balance -= request.amount
+
+        userRepository.save(user)
 
         return BalanceResponse(
             userId = user.id!!,

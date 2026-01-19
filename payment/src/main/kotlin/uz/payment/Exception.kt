@@ -19,6 +19,7 @@ class ExceptionHandler(
                 return ResponseEntity
                     .badRequest()
                     .body(exception.getErrorMessage(errorMessageSource))
+                //feign exceeption yoz
             }
 
             else -> {

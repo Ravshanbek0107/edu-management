@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2323a79-37ac-4808-9e84-4bdb93b55185" name="Changes" comment="">
+    <list default="true" id="a2323a79-37ac-4808-9e84-4bdb93b55185" name="Changes" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/config/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/config/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/config/user-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/config/user-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/course/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/CourseApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/CourseApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Repository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Repository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Service.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Clients.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Clients.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Entity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/PaymentApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/PaymentApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/user/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Entity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Exception.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Exception.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Service.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Service.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +57,7 @@
     "accountId": "aea4ecf2-c119-4a56-9140-1a2759698ffe"
   }
 }]]></component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/user" gradleHome="C:\Users\99891\.gradle\wrapper\dists\gradle-8.14.3-bin\cv11ve7ro1n3o1j4so8xd9n66\gradle-8.14.3" javaHome="C:\Program Files\Java\jdk-17" gradleVersion="8.14.3" />
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/gateway" gradleHome="C:\Users\99891\.gradle\wrapper\dists\gradle-8.14.3-bin\cv11ve7ro1n3o1j4so8xd9n66\gradle-8.14.3" javaHome="C:\Program Files\Java\jdk-17" gradleVersion="8.14.3" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -138,8 +125,8 @@
           <value>
             <map>
               <entry key="ConfigApplication" value="STOPPED" />
-              <entry key="CourseApplication" value="FAILED" />
-              <entry key="GatewayApplication" value="STOPPED" />
+              <entry key="CourseApplication" value="STOPPED" />
+              <entry key="GatewayApplication" value="FAILED" />
               <entry key="PaymentApplication" value="STOPPED" />
               <entry key="UserApplication" value="STOPPED" />
             </map>
@@ -219,11 +206,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768720639276</updated>
-      <workItem from="1768720640999" duration="25654000" />
+      <workItem from="1768720640999" duration="34997000" />
     </task>
+    <task id="LOCAL-00001" summary="final">
+      <option name="closed" value="true" />
+      <created>1768748045210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768748045210</updated>
+    </task>
+    <task id="LOCAL-00002" summary="final">
+      <option name="closed" value="true" />
+      <created>1768827985300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768827985300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>

@@ -18,7 +18,7 @@ class PaymentServiceImpl(
     private val courseFeignClient: CourseFeignClient,
 ) : PaymentService {
 
-    @Transactional
+
     override fun create(request: PaymentCreateRequest): PaymentResponse {
 
         val course = courseFeignClient.getCourse(request.courseId)
@@ -45,6 +45,7 @@ class PaymentServiceImpl(
             )
 
             payment.status = PaymentStatus.SUCCESS
+            paymentRepository.save(payment)
 
         } catch (ex: Exception) {
             //balance qaytadi failed bolsa
@@ -54,6 +55,7 @@ class PaymentServiceImpl(
             )
 
             payment.status = PaymentStatus.FAILED
+            paymentRepository.save(payment)
             throw ex
         }
 
