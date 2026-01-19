@@ -18,16 +18,16 @@ spring:
           predicates:
             - Path=/api/v1/payment/**
           filters:
-            - RewritePath=/api/v1/payment(?<remaining>/?.*), /${remaining}
+            - RewritePath=/api/v1/payment/(?<remaining>.*), /api/v1/payment/${remaining}
         - id: user-route
           uri: ${services.hosts.user}
           predicates:
             - Path=/api/v1/user/**
           filters:
-            - RewritePath=/api/v1/user(?<remaining>/?.*), /${remaining}
+            - RewritePath=/api/v1/user/(?<remaining>.*), /api/v1/user/${remaining}
         - id: course-route
           uri: ${services.hosts.course}
           predicates:
             - Path=/api/v1/course/**
           filters:
-            - RewritePath=/api/v1/course(?<remaining>/?.*), /${remaining}
+            - RewritePath=/api/v1/course/(?<remaining>.*), /api/v1/course/${remaining}

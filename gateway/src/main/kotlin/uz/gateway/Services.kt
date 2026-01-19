@@ -5,8 +5,6 @@ import org.springframework.cloud.gateway.filter.factory.rewrite.RewriteFunction
 import org.springframework.stereotype.Component
 import org.springframework.web.server.ServerWebExchange
 import reactor.core.publisher.Mono
-import uz.gateway.CACHED_REQUEST_BODY_KEY
-import uz.gateway.CACHED_URL_KEY
 
 @Component
 class RequestBodyRewrite : RewriteFunction<String?, String> {
