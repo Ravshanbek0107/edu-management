@@ -25,9 +25,8 @@ class CourseController(
         courseService.update(id, request)
 
     @DeleteMapping("/{id}")
-    fun delete(@PathVariable id: Long): BaseMessage {
+    fun delete(@PathVariable id: Long) {
         courseService.delete(id)
-        return BaseMessage.OK
     }
 
     @GetMapping("/{id}")
@@ -38,16 +37,15 @@ class CourseController(
     fun getAll() = courseService.getAll()
 
     //bu endpoint faqat Payment service tomonidan chaqiriladi
-    @PostMapping("/{id}/confirm")
-    fun confirmPurchase(@PathVariable id: Long, @RequestParam userId: Long): BaseMessage {
+    @PostMapping("/confirm/{id}")
+    fun confirmPurchase(@PathVariable id: Long, @RequestParam userId: Long){
         courseService.confirmPurchase(id, userId)
-        return BaseMessage.OK
     }
 
     @GetMapping("/statistics")
     fun statistics() = courseService.statistics()
 
-    @GetMapping("/by-user/{userId}")
+    @GetMapping("/user/{userId}")
     fun getUserCourses(@PathVariable userId: Long): List<CourseResponse> {
         return courseService.getCoursesByUser(userId)
     }

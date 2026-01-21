@@ -26,9 +26,8 @@ class UserController(
     }
 
     @DeleteMapping("/{id}")
-    fun delete(@PathVariable id: Long): BaseMessage {
+    fun delete(@PathVariable id: Long) {
         userService.delete(id)
-        return BaseMessage.OK
     }
 
     @GetMapping("/{id}")
@@ -41,16 +40,16 @@ class UserController(
         return userService.getAll()
     }
 
-    @PostMapping("/{id}/increase-balance")
-    fun increaseBalance(@PathVariable id: Long, @RequestBody request: BalanceRequest): BalanceResponse{
-        return userService.increaseBalance(id, request)
+    @PostMapping("/increase-balance")
+    fun increaseBalance(@RequestBody request: BalanceRequest): BalanceResponse{
+        return userService.increaseBalance( request)
     }
 
-    @PostMapping("/{id}/decrease-balance")
-    fun decreaseBalance(@PathVariable id: Long, @RequestBody request: BalanceRequest): BalanceResponse {
-        return userService.decreaseBalance(id, request)
+    @PostMapping("/decrease-balance")
+    fun decreaseBalance(@RequestBody request: BalanceRequest): BalanceResponse {
+        return userService.decreaseBalance(request)
     }
-    @GetMapping("/{id}/courses")
+    @GetMapping("/courses/{id}")
     fun myCourses(@PathVariable id: Long): List<CourseResponse> {
         return userService.getUserCourses(id)
     }

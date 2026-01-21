@@ -14,6 +14,7 @@ class ExceptionHandler(
     @ExceptionHandler(Throwable::class)
     fun handleOtherExceptions(exception: Throwable): ResponseEntity<Any> {
         when (exception) {
+
             is CourseException-> {
 
                 return ResponseEntity

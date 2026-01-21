@@ -3,9 +3,11 @@ package uz.course
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EntityListeners
+import jakarta.persistence.FetchType
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import jakarta.persistence.ManyToOne
 import jakarta.persistence.MappedSuperclass
 import jakarta.persistence.Table
 import jakarta.persistence.Temporal
@@ -48,5 +50,5 @@ class Course(
 class UserCourse(
     @Column(nullable = false) var userId: Long,
 
-    @Column(nullable = false) var courseId: Long,
+    @ManyToOne(fetch = FetchType.LAZY) var courseId : Course
 ) :BaseEntity()

@@ -11,8 +11,8 @@ interface UserService {
     fun getOne(id: Long): UserResponse
     fun getAll(): List<UserResponse>
 
-    fun increaseBalance(userId: Long, request: BalanceRequest): BalanceResponse
-    fun decreaseBalance(userId: Long, request: BalanceRequest): BalanceResponse
+    fun increaseBalance(request: BalanceRequest): BalanceResponse
+    fun decreaseBalance(request: BalanceRequest): BalanceResponse
     fun getUserCourses(userId: Long): List<CourseResponse>
 }
 
@@ -87,11 +87,11 @@ class UserServiceImpl(
         }
     }
     @Transactional
-    override fun increaseBalance(userId: Long, request: BalanceRequest): BalanceResponse {
+    override fun increaseBalance(request: BalanceRequest): BalanceResponse {
 
         if (request.amount < BigDecimal.ZERO) throw AmountMustBePositiveException()
 
-        val user = userRepository.findByIdAndDeletedFalse(userId) ?: throw UserNotFoundException()
+        val user = userRepository.findByIdAndDeletedFalse(request.userId) ?: throw UserNotFoundException()
 
         user.balance += request.amount
 
@@ -104,11 +104,11 @@ class UserServiceImpl(
     }
 
     @Transactional
-    override fun decreaseBalance(userId: Long, request: BalanceRequest): BalanceResponse {
+    override fun decreaseBalance(request: BalanceRequest): BalanceResponse {
 
         if (request.amount < BigDecimal.ZERO) throw AmountMustBePositiveException()
 
-        val user = userRepository.findByIdAndDeletedFalse(userId) ?: throw UserNotFoundException()
+        val user = userRepository.findByIdAndDeletedFalse(request.userId) ?: throw UserNotFoundException()
 
         if (user.balance < request.amount) {
             throw InsufficientBalanceException()

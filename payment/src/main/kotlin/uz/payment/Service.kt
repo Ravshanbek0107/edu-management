@@ -35,8 +35,10 @@ class PaymentServiceImpl(
 
         try {
             userFeignClient.decreaseBalance(
-                request.userId,
-                BalanceRequest(price)
+                BalanceRequest(
+                    request.userId,
+                    price
+                )
             )
 
             courseFeignClient.confirmPurchase(
@@ -50,8 +52,8 @@ class PaymentServiceImpl(
         } catch (ex: Exception) {
             //balance qaytadi failed bolsa
             userFeignClient.increaseBalance(
-                request.userId,
-                BalanceRequest(price)
+
+                BalanceRequest(request.userId,price)
             )
 
             payment.status = PaymentStatus.FAILED

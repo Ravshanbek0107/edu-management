@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2323a79-37ac-4808-9e84-4bdb93b55185" name="Changes" comment="final">
+      <change afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/FeignError.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/FeignError.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Controller.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Entity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Exception.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Exception.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Repository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Repository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/kotlin/uz/course/Service.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Clients.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Clients.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Config.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/DTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/DTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Enum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Enum.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Exception.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Exception.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/kotlin/uz/payment/Service.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/resources/error.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/resources/error.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Clients.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Clients.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Controller.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/DTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/DTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Enum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Enum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Exception.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Exception.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Service.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/error.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/error.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +64,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ravshanbek0107"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ravshanbek0107&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ravshanbek0107/edu-management.git",
-    "accountId": "aea4ecf2-c119-4a56-9140-1a2759698ffe"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ravshanbek0107/edu-management.git&quot;,
+    &quot;accountId&quot;: &quot;aea4ecf2-c119-4a56-9140-1a2759698ffe&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/gateway" gradleHome="C:\Users\99891\.gradle\wrapper\dists\gradle-8.14.3-bin\cv11ve7ro1n3o1j4so8xd9n66\gradle-8.14.3" javaHome="C:\Program Files\Java\jdk-17" gradleVersion="8.14.3" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -80,6 +99,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.ConfigApplication.executor": "Run",
     "Spring Boot.CourseApplication.executor": "Run",
     "Spring Boot.GatewayApplication.executor": "Run",
@@ -90,7 +110,7 @@
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/99891/IdeaProjects/course-management/gateway/src/main/kotlin/uz/gateway",
+    "last_opened_file_path": "C:/Users/99891/IdeaProjects/course-management/user/src/main/kotlin/uz/user",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,12 +118,14 @@
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\99891\IdeaProjects\course-management\user\src\main\kotlin\uz\user" />
       <recent name="C:\Users\99891\IdeaProjects\course-management\gateway\src\main\kotlin\uz\gateway" />
       <recent name="C:\Users\99891\IdeaProjects\course-management\config\src\main\resources\config" />
       <recent name="C:\Users\99891\IdeaProjects\course-management\payment\src\main\kotlin\uz\payment" />
@@ -126,7 +148,7 @@
             <map>
               <entry key="ConfigApplication" value="STOPPED" />
               <entry key="CourseApplication" value="STOPPED" />
-              <entry key="GatewayApplication" value="FAILED" />
+              <entry key="GatewayApplication" value="STOPPED" />
               <entry key="PaymentApplication" value="STOPPED" />
               <entry key="UserApplication" value="STOPPED" />
             </map>
@@ -206,7 +228,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768720639276</updated>
-      <workItem from="1768720640999" duration="34997000" />
+      <workItem from="1768720640999" duration="35320000" />
+      <workItem from="1768980421652" duration="624000" />
+      <workItem from="1768985958588" duration="7761000" />
     </task>
     <task id="LOCAL-00001" summary="final">
       <option name="closed" value="true" />
@@ -224,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768827985300</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="final">
+      <option name="closed" value="true" />
+      <created>1768832486101</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768832486101</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

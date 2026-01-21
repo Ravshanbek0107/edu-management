@@ -37,6 +37,7 @@ data class CourseResponse(
     val price: BigDecimal
 )
 data class BalanceRequest(
+    val userId: Long,
     val amount: BigDecimal
 )
 

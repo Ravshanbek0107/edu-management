@@ -61,9 +61,9 @@ class CourseServiceImpl(
     @Transactional
     override fun confirmPurchase(courseId: Long, userId: Long) {
 
-        courseRepository.findByIdAndDeletedFalse(courseId) ?: throw CourseNotFoundException()
+        val course = courseRepository.findByIdAndDeletedFalse(courseId) ?: throw CourseNotFoundException()
 
-        val alreadyBought = userCourseRepository.existsByUserIdAndCourseId(userId, courseId)
+        val alreadyBought = userCourseRepository.existsByUserIdAndCourseId(userId, course)
 
         if (alreadyBought) throw CourseAlreadyPurchasedException()
 
@@ -71,7 +71,7 @@ class CourseServiceImpl(
         userCourseRepository.save(
             UserCourse(
                 userId = userId,
-                courseId = courseId
+                courseId = course
             )
         )
     }
@@ -84,12 +84,12 @@ class CourseServiceImpl(
     }
 
     override fun getCoursesByUser(userId: Long): List<CourseResponse> {
-        val courseIds = userCourseRepository.findAllByUserId(userId)
-            .map { it.courseId }
+        val courses: List<Long> = userCourseRepository.findAllByUserId(userId)
+            .map { it.courseId.id!! }
 
-        if (courseIds.isEmpty()) throw CourseNotFoundException()
+        if (courses.isEmpty()) return emptyList()
 
-        return courseRepository.findAllById(courseIds)
+        return courseRepository.findAllById(courses)
             .map { CourseResponse.toResponse(it) }
     }
 }

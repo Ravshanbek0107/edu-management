@@ -39,6 +39,7 @@ data class UserResponse(
 }
 
 data class BalanceRequest(
+    val userId: Long,
     val amount: BigDecimal
 )
 

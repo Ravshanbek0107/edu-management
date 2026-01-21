@@ -1,5 +1,6 @@
 package uz.payment
 
+import feign.codec.ErrorDecoder
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.support.ResourceBundleMessageSource
@@ -12,6 +13,10 @@ class WebMvcConfig : WebMvcConfigurer {
     fun errorMessageSource() = ResourceBundleMessageSource().apply {
         setDefaultEncoding(Charsets.UTF_8.name())
         setBasename("error")
+    }
+    @Bean
+    fun feignErrorDecoder(): ErrorDecoder {
+        return CustomFeignErrorDecoder()
     }
 
 }

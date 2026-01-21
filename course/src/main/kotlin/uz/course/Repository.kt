@@ -46,6 +46,6 @@ interface UserCourseRepository : BaseRepository<UserCourse> {
 
     fun findAllByUserId(userId: Long): List<UserCourse>
 
-    fun existsByUserIdAndCourseId(userId: Long, courseId: Long): Boolean
+    fun existsByUserIdAndCourseId(userId: Long, courseId: Course): Boolean
 
 }

@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam
 @FeignClient(name = "user", url = "\${services.hosts.user}")
 interface UserFeignClient {
 
-    @PostMapping("/api/v1/user/{id}/decrease-balance")
-    fun decreaseBalance(@PathVariable id: Long, @RequestBody request: BalanceRequest)
+    @PostMapping("/api/v1/user/decrease-balance")
+    fun decreaseBalance(@RequestBody request: BalanceRequest)
 
-    @PostMapping("/api/v1/user/{id}/increase-balance")
-    fun increaseBalance(@PathVariable id: Long, @RequestBody request: BalanceRequest)
+    @PostMapping("/api/v1/user/increase-balance")
+    fun increaseBalance(@RequestBody request: BalanceRequest)
 }
 
 @FeignClient(name = "course", url = "\${services.hosts.course}")
@@ -23,7 +23,7 @@ interface CourseFeignClient {
     @GetMapping("/api/v1/course/{id}")
     fun getCourse(@PathVariable id: Long): CourseResponse
 
-    @PostMapping("/api/v1/course/{id}/confirm")
+    @PostMapping("/api/v1/course/confirm/{id}")
     fun confirmPurchase(@PathVariable id: Long, @RequestParam userId: Long)
 }
 
